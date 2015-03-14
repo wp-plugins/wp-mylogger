@@ -3,7 +3,7 @@ Contributors: paniko
 Tags: logger, appenders, debug, developer
 Requires at least: 3.5.1
 Tested up to: 3.6
-Stable tag: 1.0.0
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ This plugin use Apache log4php™ libary for create custom loggers on your file 
 This plugin is very useful in development to debug issues or to create log files when you create an importer. 
 
 == Description ==
-For use the custom appenders, add this code in your init plugin for example:
+To use the custom appenders, add this code in your init plugin for example:
 Choose among appenders (LoggerAppenderDailyFile,LoggerAppenderRollingFile,LoggerAppenderFile,LoggerAppenderMail,LoggerAppenderMailEvent), for each type you must 
 specify the relative parameters, how to official documentation of log4php.
 
@@ -58,7 +58,7 @@ You can set level of logger, add the parameter:
 * DEBUG	...	Fine-grained informational events that are most useful to debug an application.
 * TRACE	Lowest	Finest-grained informational events.
 
-If you want put a logger in frontend, add this code in temaplate script:
+If do you want put a logger in frontend, add this code in template script:
 `<?php
 		$parameters = array(
 			My_Logger::ROLLING_MAX_FILE_SIZE	=> '1MB',
@@ -78,6 +78,8 @@ If you want put a logger in frontend, add this code in temaplate script:
 
 For more info read the API documents of log4php:[Apache Log4php Docs](http://logging.apache.org/log4php/docs/appenders.html "API Documents") 
 
+*Configuration*
+You can set configuration path file to export your logger, in the plugin's settings.
 
 == Installation ==
 
@@ -86,7 +88,7 @@ For more info read the API documents of log4php:[Apache Log4php Docs](http://log
 
 == Screenshots ==
 
-1. `/assets/banner-772x250.png`
+1. /assets/banner-772x250.png
 
 == Changelog ==
 
