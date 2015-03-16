@@ -12,13 +12,13 @@ This plugin is very useful in development to debug issues or to create log files
 
 == Description ==
 To use the custom appenders, add this code in your init plugin for example:
-Choose among appenders (LoggerAppenderDailyFile,LoggerAppenderRollingFile,LoggerAppenderFile,LoggerAppenderMail,LoggerAppenderMailEvent), for each type you must 
+Choose among appenders (LoggerAppenderDailyFile, LoggerAppenderRollingFile, LoggerAppenderFile, LoggerAppenderMail, LoggerAppenderMailEvent), for each type you must 
 specify the relative parameters, how to official documentation of log4php.
 
 * For rolling file appenders:
 
 `<?php
-	private $logger; //add in your class pugin to get an instance logger
+	private $logger; //add in your class plugin to get an instance logger
 	$parameters = array(
 		My_Logger::ROLLING_MAX_FILE_SIZE	=> '1MB',
 		My_Logger::ROLLING_APPENDER			=> true,
@@ -47,7 +47,7 @@ specify the relative parameters, how to official documentation of log4php.
 		$mylogger = My_Logger::get_instance("<your name logger>", My_Logger::MAIL, $parameters);
 ?>`
 
-** SET Logger threshold **
+== SET Logger threshold ==
 A level describes the severity of a logging message. There are six levels, show here in descending order of severity.
 You can set level of logger, add the parameter:
 
@@ -78,7 +78,7 @@ If do you want put a logger in frontend, add this code in template script:
 
 For more info read the API documents of log4php:[Apache Log4php Docs](http://logging.apache.org/log4php/docs/appenders.html "API Documents") 
 
-*Configuration*
+== Configuration ==
 You can set configuration path file to export your logger, in the plugin's settings.
 
 == Installation ==
